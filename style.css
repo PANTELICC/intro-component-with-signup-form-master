@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root{
+    --Red: hsl(0, 100%, 74%) ;
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark_blue: hsl(249, 10%, 26%) ;
+    --Grayish_blue: hsl(246, 25%, 77%);
+}
+body{
+    background: url(images/bg-intro-desktop.png) var(--Red);
+    font-family: 'Poppins', sans-serif;
+
+}
+.all{   
+     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+}
+.text{
+    width: 40%;
+    padding: 5%;
+    color: white;
+}
+.text h1{
+    font-size: 350%;
+    line-height: 55px;
+}
+.text p{
+    font-size: 18px;
+}
+.form{
+    width: 60%;
+    text-align: center;
+}
+.nas{
+    font-size: 120%;
+    background: var(--Blue);
+    width: 500px;
+    margin: auto;
+    padding:2% 1%;
+    border-radius: 10px;
+    color: white;
+}
+.nas span{
+    font-weight: 300;
+}
+.pr{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    width: 465px;
+    margin: 10px auto;
+    padding: 3%;
+}
+.pr input{
+    font-size: 18px;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.164);
+    outline: 0;
+    font-weight: 600;
+}
+.pr input:focus{
+    border-color: var(--Dark_blue);
+}
+.pr input::placeholder{
+    font-weight: 500;
+}
+.pr button{
+    background-color: var(--Green);
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    padding: 15px 0;
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 15px 0;
+}
+.pr p{
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--Grayish_blue);
+}
+.pr p span{
+    color: var(--Red);
+}
+@media screen and (max-width:1487px) {
+    .all{
+        width: 100%;
+    }
+    .text{
+        width: 40%;
+    }
+    .text h1{
+        font-size: 250%;
+    }
+    .text p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:943px){
+    .all{
+        flex-direction: column;
+    }
+    .text{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .form{
+        width: 80%;
+    }
+    .nas{
+        width: 100%;
+    }
+    .pr{
+        width: 95%;
+    }
+}
+@media screen and (max-width:507px){
+    .form{
+        width: 90%;
+    }
+    .text h1{
+        font-size: 200%;
+        line-height: 35px;
+    }
+}
